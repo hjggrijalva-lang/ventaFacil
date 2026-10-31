@@ -1,0 +1,216 @@
+---
+name: Venta Fácil Mobile POS
+colors:
+  surface: '#f9f9ff'
+  surface-dim: '#d3daea'
+  surface-bright: '#f9f9ff'
+  surface-container-lowest: '#ffffff'
+  surface-container-low: '#f0f3ff'
+  surface-container: '#e7eefe'
+  surface-container-high: '#e2e8f8'
+  surface-container-highest: '#dce2f3'
+  on-surface: '#151c27'
+  on-surface-variant: '#40493d'
+  inverse-surface: '#2a313d'
+  inverse-on-surface: '#ebf1ff'
+  outline: '#707a6c'
+  outline-variant: '#bfcaba'
+  surface-tint: '#1b6d24'
+  primary: '#0d631b'
+  on-primary: '#ffffff'
+  primary-container: '#2e7d32'
+  on-primary-container: '#cbffc2'
+  inverse-primary: '#88d982'
+  secondary: '#005faf'
+  on-secondary: '#ffffff'
+  secondary-container: '#54a0fe'
+  on-secondary-container: '#003567'
+  tertiary: '#8e3e00'
+  on-tertiary: '#ffffff'
+  tertiary-container: '#b45000'
+  on-tertiary-container: '#ffeee6'
+  error: '#ba1a1a'
+  on-error: '#ffffff'
+  error-container: '#ffdad6'
+  on-error-container: '#93000a'
+  primary-fixed: '#a3f69c'
+  primary-fixed-dim: '#88d982'
+  on-primary-fixed: '#002204'
+  on-primary-fixed-variant: '#005312'
+  secondary-fixed: '#d4e3ff'
+  secondary-fixed-dim: '#a5c8ff'
+  on-secondary-fixed: '#001c3a'
+  on-secondary-fixed-variant: '#004786'
+  tertiary-fixed: '#ffdbca'
+  tertiary-fixed-dim: '#ffb68e'
+  on-tertiary-fixed: '#331200'
+  on-tertiary-fixed-variant: '#773300'
+  background: '#f9f9ff'
+  on-background: '#151c27'
+  surface-variant: '#dce2f3'
+typography:
+  headline-lg:
+    fontFamily: Inter
+    fontSize: 32px
+    fontWeight: '700'
+    lineHeight: 40px
+  headline-lg-mobile:
+    fontFamily: Inter
+    fontSize: 26px
+    fontWeight: '700'
+    lineHeight: 32px
+  headline-md:
+    fontFamily: Inter
+    fontSize: 22px
+    fontWeight: '600'
+    lineHeight: 28px
+  headline-sm:
+    fontFamily: Inter
+    fontSize: 18px
+    fontWeight: '600'
+    lineHeight: 24px
+  body-lg:
+    fontFamily: Inter
+    fontSize: 16px
+    fontWeight: '400'
+    lineHeight: 24px
+  body-md:
+    fontFamily: Inter
+    fontSize: 14px
+    fontWeight: '400'
+    lineHeight: 20px
+  body-sm:
+    fontFamily: Inter
+    fontSize: 12px
+    fontWeight: '400'
+    lineHeight: 16px
+  label-lg:
+    fontFamily: Inter
+    fontSize: 16px
+    fontWeight: '600'
+    lineHeight: 20px
+  label-md:
+    fontFamily: Inter
+    fontSize: 14px
+    fontWeight: '600'
+    lineHeight: 18px
+  label-sm:
+    fontFamily: Inter
+    fontSize: 11px
+    fontWeight: '700'
+    lineHeight: 14px
+  numeric-keypad:
+    fontFamily: Inter
+    fontSize: 24px
+    fontWeight: '600'
+    lineHeight: 32px
+  display-currency:
+    fontFamily: Inter
+    fontSize: 36px
+    fontWeight: '800'
+    lineHeight: 44px
+rounded:
+  sm: 0.25rem
+  DEFAULT: 0.5rem
+  md: 0.75rem
+  lg: 1rem
+  xl: 1.5rem
+  full: 9999px
+spacing:
+  gutter: 1rem
+  margin: 1rem
+  space-xs: 0.25rem
+  space-sm: 0.5rem
+  space-md: 0.75rem
+  space-lg: 1rem
+  space-xl: 1.5rem
+---
+
+## Brand & Style
+
+This design system targets small retail operators, mobile vendors, and boutique managers who require swift, error-free point-of-sale processing and immediate inventory tracking. The visual identity reflects absolute reliability, tactile clarity, and operational rhythm.
+
+The design movement adheres to **Corporate / Modern** utilitarian design:
+- High contrast ratios ensure immediate legibility in variable lighting conditions, from bright outdoor stalls to dimly lit stockrooms.
+- Generous tap targets prevent mis-taps during high-volume customer checkout queues.
+- Standardized visual weights ensure users process numbers, totals, and stock status effortlessly.
+- The interface feels familiar, fast, and stable, reducing cognitive friction without unnecessary ornamentation.
+
+## Colors
+
+The color palette prioritizes operational status and monetary clarity:
+
+- **Primary (`#2E7D32`)**: Used for confirmation states, completed sales, incoming revenue, primary action buttons, and dominant system prompts.
+- **Secondary (`#1976D2`)**: Assigned to inventory tracking, customer profile badges, sync states, and secondary interactions.
+- **Tertiary / Alert (`#ED6C02`)**: Denotes warnings, low-stock thresholds, pending syncs, and holding carts.
+- **Danger / Expense (`#D32F2F`)**: Reserved strictly for transaction cancellations, refunds, item voids, and expense logging.
+- **Background & Surfaces**: Base canvas utilizes `#F8F9FA` for clean separation against elevated `#FFFFFF` component cards.
+- **Typography & Neutrals**: High-density neutral `#1F2937` for primary titles, monetary figures, and active labels. Secondary copy and inactive elements utilize `#6B7280`. Subtle surface borders use `#E5E7EB`.
+
+## Typography
+
+Typography is set exclusively in **Inter** to maintain legibility across high-density numerical displays and rapid product scanning interfaces.
+
+- **Monetary Totals (`display-currency`)**: Set with high font weight (`800`) and tight tracking to fit multi-digit sales amounts on handheld viewports.
+- **Keypad Entry (`numeric-keypad`)**: Optimized for touch targets; centralizes large numerals with consistent baseline alignment.
+- **Data Tables & Inventory Rows**: Default to `body-md` paired with tabular figures (tnum) to align decimal places vertically without horizontal shift.
+- **Status & Tags**: Utilize `label-sm` with uppercase transformation and `+0.5px` letter spacing for fast identification.
+
+## Layout & Spacing
+
+The layout model is optimized for mobile single-hand and two-thumb operation:
+
+- **Grid Model**: A fluid 4-column layout on compact mobile devices, shifting to an 8-column layout on tablets.
+- **Touch Margins**: Outer screen boundaries adhere to a standard 16px (`1rem`) margin to respect physical bezel edges and hardware gesture zones.
+- **Vertical Rhythm**: 8px baseline multiples ensure components stack predictably. Product listing items and cart lines maintain a fixed 56px minimum touch target height.
+- **Action Safe Zones**: The lower 35% of the viewport is treated as the primary interaction zone, housing checkout bars, numpads, and primary action controls.
+
+## Elevation & Depth
+
+Visual hierarchy uses calibrated ambient drop shadows paired with crisp border outlines (`#E5E7EB`) to define active elements without heavy visual noise:
+
+- **Level 0 (Flat Canvas)**: `#F8F9FA` background surface.
+- **Level 1 (Cards & Product Tiles)**: `#FFFFFF` surface with `0 1px 3px rgba(0, 0, 0, 0.08), 0 1px 2px rgba(0, 0, 0, 0.04)` and a 1px perimeter border.
+- **Level 2 (Active/Pressed Cards & Modals)**: `#FFFFFF` surface with `0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)`.
+- **Level 3 (Bottom Navigation & Fixed Sticky Action Bars)**: `0 -2px 10px rgba(0, 0, 0, 0.05)` anchored to the bottom screen edge to distinctly float above scrolling list items.
+
+## Shapes
+
+The system uses Level 2 roundedness (8px base, scaling up to 12px for primary mobile cards and sheets) to evoke approachable yet structural utility:
+
+- **Standard Cards & Tiles**: 12px border radius (`rounded-lg` equivalent) provides soft separation while preserving interior content area.
+- **Buttons & Form Fields**: 8px (`0.5rem`) radius for focused touch precision.
+- **Chips & Status Badges**: 4px to 6px subtle rounding to clearly differentiate them from interactive button controls.
+- **Numeric Keypad Buttons**: 8px radius with clear tactile boundaries.
+
+## Components
+
+### Buttons
+- **Primary Button**: Solid `#2E7D32` background with `#FFFFFF` text. Minimum height of 48px (56px for primary checkout actions). Centered `label-lg` typography.
+- **Secondary Button**: `#FFFFFF` background with 1.5px border in `#1976D2` and `#1976D2` text.
+- **Destructive Button**: Solid `#D32F2F` or transparent with `#D32F2F` text and border for clear warning demarcation.
+
+### Cards & Product Tiles
+- White `#FFFFFF` container with 12px radius, light border (`#E5E7EB`), and Level 1 shadow.
+- Compact layout featuring product title, thumbnail, barcode/SKU reference, and price emphasized in bold primary color.
+
+### Form Fields & Inputs
+- 48px height, `#FFFFFF` fill, 1px border (`#D1D5DB`).
+- Focus state activates a 2px outline of `#2E7D32` with zero layout shift.
+- Clear button (X) positioned inside the right edge for rapid input resets.
+
+### Numeric Keypad
+- 3x4 grid structure embedded directly into POS checkout views.
+- Individual keys have an explicit `#FFFFFF` background, subtle border, and 56px height.
+- Direct feedback state: background shifts to `#F3F4F6` instantly on tap.
+
+### Bottom Navigation Bar
+- Fixed 64px container elevated at Level 3.
+- Active item uses `#2E7D32` icon and label; inactive items display `#6B7280`.
+- Badges with count indicators display at the top-right of relevant icons using `#D32F2F` or `#ED6C02`.
+
+### Status Badges & Chips
+- Padding of 4px vertical, 8px horizontal with 4px border radius.
+- In-stock: `#E8F5E9` background with `#2E7D32` text.
+- Low-stock: `#FFF3E0` background with `#ED6C02` text.
+- Out-of-stock: `#FFEBEE` background with `#D32F2F` text.
